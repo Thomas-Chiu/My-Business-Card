@@ -16,10 +16,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #logo {
   padding-top: 2rem;
 }
 
+@media(min-width: 992px) {
+  .container::before {
+    content: '';
+    width: 30%;
+    height: 30%;
+    border: 3px solid red;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -10%;
+    bottom: 5%;
+  }
 
+  .container::after {
+    content: '';
+    width: 30%;
+    height: 30%;
+    border: 3px solid red;
+    transform: rotate(45deg);
+    position: fixed;
+    top: 5%;
+    right: -10%;
+  }
+}
