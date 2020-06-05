@@ -30,8 +30,8 @@ body {
     height: 30%;
     border: 3px solid red;
     transform: rotate(45deg);
-    position: absolute;
-    left: -10%;
+    position: fixed;
+    left: 5%;
     bottom: 5%;
   }
 
@@ -43,6 +43,6 @@ body {
     transform: rotate(45deg);
     position: fixed;
     top: 5%;
-    right: -10%;
+    right: 5%;
   }
 }
